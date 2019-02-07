@@ -5,6 +5,12 @@ $(document).ready(function() {
 	initializePage();
 })
 
+$('.friendName').click(function(event){
+	event.preventDefault();
+	var newText = anagrammedName($(this).text());
+	$(this).text(newText);
+});
+
 /*
  * Function that is called when the document is ready.
  */
